@@ -3,15 +3,17 @@
   "version": "0.0.0",
   "description": "A simple Begin app with the minimum necessary file structure",
   "scripts": {
-    "start": "npx sandbox",
+    "watch": "eleventy --serve",
     "build": "eleventy",
-    "deploy": "npc arc deploy --staging"
+    "deploy": "ARC_STATIC_SPA=false npx arc deploy --staging",
+    "start": "npm run watch && ARC_STATIC_SPA=false sandbox"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
-    "@architect/sandbox": "^1.7.0"
+    "@architect/architect": "^6.2.4"
   },
   "dependencies": {
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1"
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "@architect/sandbox": "^1.7.0"
   }
 }

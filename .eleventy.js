@@ -24,4 +24,9 @@ module.exports = function(eleventyConfig) {
     alwaysWrapLineHighlights: false
   });
 
+  return {
+    dir: {
+      input: 'src'
+    }
+  };
 };
