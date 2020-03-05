@@ -4,6 +4,7 @@
   "description": "A simple Begin app with the minimum necessary file structure",
   "scripts": {
     "start": "npx sandbox"
+    "build": "eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
