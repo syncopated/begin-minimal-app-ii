@@ -6,6 +6,10 @@
     "start": "npx sandbox"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
     "@architect/sandbox": "^1.7.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1"
   }
 }
